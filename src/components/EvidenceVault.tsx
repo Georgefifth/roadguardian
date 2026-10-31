@@ -172,8 +172,8 @@ export const EvidenceVault: React.FC<EvidenceVaultProps> = ({
                       {slot.title}
                     </span>
                     {hasPhoto ? (
-                      <span className="text-emerald-400 flex items-center gap-1 text-[11px] font-mono shrink-0">
-                        <CheckCircle2 className="w-3.5 h-3.5" /> Secured
+                      <span data-testid="photo-secured-badge" className="text-emerald-400 flex items-center gap-1 text-[11px] font-mono shrink-0">
+                        <CheckCircle2 className="w-3.5 h-3.5" /> Evidence Secured
                       </span>
                     ) : slot.required ? (
                       <span className="text-hazard-400 text-[10px] font-mono px-1 rounded bg-hazard-500/10 border border-hazard-500/20 shrink-0">

@@ -92,18 +92,18 @@ export const TriageHUD: React.FC<TriageHUDProps> = ({
         </div>
 
         {/* Live GPS Coordinates Banner (To read out to 911 dispatcher) */}
-        <div className="mt-3 pt-3 border-t border-obsidian-700/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs bg-obsidian-950/60 px-3 py-2 rounded-lg border border-obsidian-700/40">
-          <div className="flex items-center gap-2 text-slate-300 overflow-hidden">
+        <div className="mt-3 pt-3 border-t border-obsidian-700/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs bg-obsidian-950/60 px-3 py-2 rounded-lg border border-obsidian-700/40 w-full min-w-0 overflow-hidden">
+          <div className="flex items-center gap-2 text-slate-300 min-w-0 w-full sm:w-auto flex-1 overflow-hidden">
             <MapPin className="w-4 h-4 text-hazard-500 shrink-0" />
             <span className="font-mono text-slate-400 shrink-0">Your Coordinates:</span>
-            <span className="font-mono font-semibold text-slate-200 truncate">
+            <span className="font-mono font-semibold text-slate-200 truncate min-w-0 flex-1">
               {incident.location.latitude && incident.location.longitude
                 ? `${incident.location.latitude}, ${incident.location.longitude}`
                 : incident.location.addressApprox}
             </span>
           </div>
 
-          <div className="flex items-center gap-2 w-full sm:w-auto justify-end">
+          <div className="flex items-center gap-2 w-full sm:w-auto justify-end shrink-0 pt-1 sm:pt-0">
             <button
               onClick={handleCopyLocation}
               className="inline-flex items-center gap-1 px-2 py-1 rounded bg-obsidian-800 hover:bg-obsidian-700 text-slate-300 border border-obsidian-600 text-[11px] font-mono transition-colors"

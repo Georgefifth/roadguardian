@@ -1,0 +1,143 @@
+{
+  "base": "https://safespace-hacks.vercel.app",
+  "browser": "chromium",
+  "headed": false,
+  "startedAt": "2026-10-31T08:41:54.819Z",
+  "finishedAt": "2026-10-31T08:42:35.915Z",
+  "summary": {
+    "total": 10,
+    "pass": 6,
+    "fail": 4
+  },
+  "results": [
+    {
+      "viewport": "desktop",
+      "id": "smoke-landing",
+      "title": "Landing page renders with zero overflow and active emergency HUD",
+      "status": "pass",
+      "ms": 1123,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/smoke-landing-landing-desktop.png"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "id": "core-flow-end-to-end",
+      "title": "Complete 4-stage emergency intake flow from panic to SHA-256 dossier",
+      "status": "fail",
+      "ms": 10479,
+      "error": "locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText(/Secured/i).first() to be visible\u001b[22m\n\u001b[2m    24 × locator resolved to hidden <span class=\"truncate text-slate-400 hidden xs:inline\">Secured</span>\u001b[22m\n",
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/core-flow-end-to-end-phase1-safety-secured-desktop.png"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "id": "state-persistence-reload",
+      "title": "Incident data survives full browser reload via local cryptographic storage",
+      "status": "pass",
+      "ms": 3236,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/state-persistence-reload-persistence-after-reload-desktop.png"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "id": "tow-shield-anti-extortion",
+      "title": "Anti-bandit tow truck verification warns on unsolicited arrivals",
+      "status": "pass",
+      "ms": 298,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/tow-shield-anti-extortion-tow-shield-unsolicited-alert-desktop.png"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "id": "incident-vault-lifecycle",
+      "title": "Incident vault modal allows switching, managing, and creating new sessions",
+      "status": "pass",
+      "ms": 720,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/incident-vault-lifecycle-vault-modal-open-desktop.png",
+        "evidence/stage-3-qa/screens/incident-vault-lifecycle-vault-new-session-desktop.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "smoke-landing",
+      "title": "Landing page renders with zero overflow and active emergency HUD",
+      "status": "fail",
+      "ms": 235,
+      "error": "horizontal overflow detected: 244px",
+      "errors": [],
+      "warnings": [],
+      "screenshots": []
+    },
+    {
+      "viewport": "mobile",
+      "id": "core-flow-end-to-end",
+      "title": "Complete 4-stage emergency intake flow from panic to SHA-256 dossier",
+      "status": "fail",
+      "ms": 10589,
+      "error": "locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText(/Secured/i).first() to be visible\u001b[22m\n\u001b[2m    24 × locator resolved to hidden <span class=\"truncate text-slate-400 hidden xs:inline\">Secured</span>\u001b[22m\n",
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/core-flow-end-to-end-phase1-safety-secured-mobile.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "state-persistence-reload",
+      "title": "Incident data survives full browser reload via local cryptographic storage",
+      "status": "pass",
+      "ms": 3282,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/state-persistence-reload-persistence-after-reload-mobile.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "tow-shield-anti-extortion",
+      "title": "Anti-bandit tow truck verification warns on unsolicited arrivals",
+      "status": "pass",
+      "ms": 312,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/tow-shield-anti-extortion-tow-shield-unsolicited-alert-mobile.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "incident-vault-lifecycle",
+      "title": "Incident vault modal allows switching, managing, and creating new sessions",
+      "status": "fail",
+      "ms": 10673,
+      "error": "locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText(/1. Life Safety/i).first() to be visible\u001b[22m\n\u001b[2m    24 × locator resolved to hidden <span class=\"text-xs font-semibold truncate hidden sm:inline text-hazard-400\">1. Life Safety</span>\u001b[22m\n",
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/incident-vault-lifecycle-vault-modal-open-mobile.png"
+      ]
+    }
+  ]
+}
