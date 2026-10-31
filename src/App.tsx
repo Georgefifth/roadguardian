@@ -49,17 +49,17 @@ export const App: React.FC = () => {
     const fresh = createNewIncident();
     setActiveIncident(fresh);
     saveIncidentToStorage(fresh);
-    refreshGPS(fresh);
+    refreshGPS(fresh.id);
   }, []);
 
-  const refreshGPS = (targetIncident = activeIncident) => {
+  const refreshGPS = (incidentId?: string) => {
     getDeviceGeolocation().then((loc) => {
-      const updated: CrashIncident = {
-        ...targetIncident,
-        location: loc,
-      };
-      setActiveIncident(updated);
-      saveIncidentToStorage(updated);
+      setActiveIncident((prev) => {
+        if (incidentId && prev.id !== incidentId) return prev;
+        const updated = { ...prev, location: loc };
+        saveIncidentToStorage(updated);
+        return updated;
+      });
     });
   };
 
@@ -163,7 +163,7 @@ export const App: React.FC = () => {
     saveIncidentToStorage(fresh);
     setIncidents(getAllIncidentsFromStorage());
     setCurrentStep(1);
-    refreshGPS(fresh);
+    refreshGPS(fresh.id);
     showToast('New emergency intake session initialized');
   };
 
@@ -223,7 +223,7 @@ export const App: React.FC = () => {
             incident={activeIncident}
             onUpdateSafety={handleUpdateSafety}
             onUpdateType={handleUpdateType}
-            onRefreshLocation={() => refreshGPS(activeIncident)}
+            onRefreshLocation={() => refreshGPS(activeIncident.id)}
             onProceed={() => setCurrentStep(2)}
           />
         )}
