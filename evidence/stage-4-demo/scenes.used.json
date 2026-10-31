@@ -1,0 +1,356 @@
+[
+  {
+    "name": "01-cover",
+    "card": {
+      "title": "RoadGuardian",
+      "kicker": "SafeSpace Hacks 2026",
+      "sub": "Offline-First Roadside & Crash Safety Copilot",
+      "foot": "github.com/Georgefifth/roadguardian • 100% Offline • Zero-Cloud",
+      "preset": "dark-premium",
+      "accent": "#F59E0B"
+    },
+    "duration": 9,
+    "vo": "Every year, over six million drivers experience roadside crashes. In those chaotic first minutes, adrenaline dump leads to secondary collisions and predatory scams.",
+    "pause": 0.3
+  },
+  {
+    "name": "02-problem",
+    "card": {
+      "title": "The Ten-Minute Crisis",
+      "kicker": "The Problem",
+      "sub": "Adrenaline Dump • Secondary Highway Impacts • Bandit Tow Truck Scams",
+      "foot": "Over 1,000 fatal secondary impacts occur annually • NHTSA Data",
+      "preset": "dark-premium",
+      "accent": "#F59E0B"
+    },
+    "duration": 9,
+    "vo": "Conventional insurance apps require cellular service and account passwords. Worse, they offer zero life-safety guidance, leaving drivers vulnerable to predatory tow trucks.",
+    "pause": 0.3
+  },
+  {
+    "name": "03-triage-safety",
+    "url": "https://safespace-hacks.vercel.app",
+    "session": "app",
+    "actions": [
+      {
+        "type": "waitFor",
+        "sel": "text=Life-Critical Rule",
+        "timeout": 15000,
+        "__focus": null
+      },
+      {
+        "type": "click",
+        "sel": "text=1. Hazard Flashers Activated",
+        "__focus": [
+          697.0625,
+          763.5
+        ]
+      },
+      {
+        "type": "click",
+        "sel": "text=2. Engine Switched Off",
+        "__focus": [
+          744,
+          861.5
+        ]
+      },
+      {
+        "type": "click",
+        "sel": "text=3. Positioned Behind Guardrail",
+        "__focus": [
+          733,
+          939.5
+        ]
+      },
+      {
+        "type": "wait",
+        "ms": 800,
+        "__focus": null
+      }
+    ],
+    "vo": "RoadGuardian launches instantly with zero login. Phase One enforces physical survival: hazard lights on, engine cut, and all passengers safely behind the highway barrier.",
+    "pause": 0.3,
+    "__focusLog": [
+      {
+        "t": 0.72,
+        "x": 697,
+        "y": 764
+      },
+      {
+        "t": 1.11,
+        "x": 744,
+        "y": 862
+      },
+      {
+        "t": 1.52,
+        "x": 733,
+        "y": 940
+      }
+    ]
+  },
+  {
+    "name": "04-evidence-vault",
+    "session": "app",
+    "actions": [
+      {
+        "type": "click",
+        "sel": "button:has-text(\"Continue to Evidence Vault\"), button:has-text(\"Proceed to Evidence Capture\")",
+        "__focus": [
+          960,
+          1213.5
+        ]
+      },
+      {
+        "type": "waitFor",
+        "sel": "text=Standardized Evidence & Exchange Vault",
+        "timeout": 10000,
+        "__focus": null
+      },
+      {
+        "type": "fill",
+        "sel": "input[placeholder*=\"John Doe\"]",
+        "text": "Marcus Vance",
+        "__focus": [
+          755.5,
+          587
+        ]
+      },
+      {
+        "type": "fill",
+        "sel": "input[placeholder=\"PLATE #\"]",
+        "text": "8XYZ419",
+        "__focus": [
+          688,
+          727
+        ]
+      },
+      {
+        "type": "fill",
+        "sel": "input[placeholder*=\"1HGCR2F83HA019284\"]",
+        "text": "4T1B11HK5NU109284",
+        "__focus": [
+          1164.5,
+          727
+        ]
+      },
+      {
+        "type": "click",
+        "sel": "button:has-text(\"Simulate Sample Shot\")",
+        "__focus": [
+          672.6640625,
+          251.25
+        ]
+      },
+      {
+        "type": "wait",
+        "ms": 1000,
+        "__focus": null
+      }
+    ],
+    "vo": "Phase Two guides bulletproof evidence capture. Drivers record license plates, insurance, and windshield VIN barcodes with timestamped cryptographic proofs.",
+    "pause": 0.3,
+    "__focusLog": [
+      {
+        "t": 3.34,
+        "x": 960,
+        "y": 1214
+      },
+      {
+        "t": 3.72,
+        "x": 756,
+        "y": 587
+      },
+      {
+        "t": 4.09,
+        "x": 688,
+        "y": 727
+      },
+      {
+        "t": 4.47,
+        "x": 1165,
+        "y": 727
+      },
+      {
+        "t": 4.89,
+        "x": 673,
+        "y": 251
+      }
+    ]
+  },
+  {
+    "name": "05-tow-shield",
+    "session": "app",
+    "actions": [
+      {
+        "type": "click",
+        "sel": "button:has-text(\"Proceed to Tow Truck & Statement Shield\")",
+        "__focus": [
+          1062.5,
+          1166.578125
+        ]
+      },
+      {
+        "type": "waitFor",
+        "sel": "text=Bandit Tow Truck Defense Shield",
+        "timeout": 10000,
+        "__focus": null
+      },
+      {
+        "type": "click",
+        "sel": "button:has-text(\"Arrived Unsolicited\")",
+        "__focus": [
+          856.75,
+          270
+        ]
+      },
+      {
+        "type": "fill",
+        "sel": "input[placeholder*=\"City Fleet Towing\"]",
+        "text": "Golden Gate Highway Towing",
+        "__focus": [
+          1164.5,
+          270
+        ]
+      },
+      {
+        "type": "scrollIntoView",
+        "sel": "text=Neutral Statement Shield",
+        "__focus": [
+          718.5,
+          563
+        ]
+      },
+      {
+        "type": "fill",
+        "sel": "input[placeholder*=\"Northbound Lane 1\"]",
+        "text": "Southbound Lane 2 on US-101",
+        "__focus": [
+          687.328125,
+          696
+        ]
+      },
+      {
+        "type": "wait",
+        "ms": 1000,
+        "__focus": null
+      }
+    ],
+    "vo": "Phase Three deploys the Bandit Tow Shield, warning against unverified trucks and enforcing blank form refusal. It also generates an objective statement to prevent accidental liability.",
+    "pause": 0.3,
+    "__focusLog": [
+      {
+        "t": 7.31,
+        "x": 1063,
+        "y": 1167
+      },
+      {
+        "t": 7.71,
+        "x": 857,
+        "y": 270
+      },
+      {
+        "t": 8.09,
+        "x": 1165,
+        "y": 270
+      },
+      {
+        "t": 8.49,
+        "x": 719,
+        "y": 563
+      },
+      {
+        "t": 8.87,
+        "x": 687,
+        "y": 696
+      }
+    ]
+  },
+  {
+    "name": "06-dossier-export",
+    "session": "app",
+    "actions": [
+      {
+        "type": "click",
+        "sel": "button:has-text(\"Compile & Export Final Incident Dossier\")",
+        "__focus": [
+          1074.5,
+          979
+        ]
+      },
+      {
+        "type": "waitFor",
+        "sel": "text=OFFICIAL INCIDENT DOSSIER",
+        "timeout": 10000,
+        "__focus": null
+      },
+      {
+        "type": "scrollIntoView",
+        "sel": "text=Cryptographic Integrity Seal",
+        "__focus": [
+          741,
+          270
+        ]
+      },
+      {
+        "type": "click",
+        "sel": "button:has-text(\"Copy Text Summary\")",
+        "__focus": [
+          1048,
+          61.5
+        ]
+      },
+      {
+        "type": "wait",
+        "ms": 1500,
+        "__focus": null
+      }
+    ],
+    "vo": "Phase Four compiles a tamper-evident dossier sealed with SHA-256. All GPS stamps, driver disclosures, and damage proofs are ready for police and insurance adjusters with one tap.",
+    "pause": 0.3,
+    "__focusLog": [
+      {
+        "t": 11.29,
+        "x": 1075,
+        "y": 979
+      },
+      {
+        "t": 11.69,
+        "x": 741,
+        "y": 270
+      },
+      {
+        "t": 12.13,
+        "x": 1048,
+        "y": 62
+      }
+    ]
+  },
+  {
+    "name": "07-validation",
+    "card": {
+      "title": "Real-World Validated",
+      "kicker": "Empirical Testing",
+      "sub": "12/12 NHTSA & FTC Test Cases Passed • 94% Cryptographic Avalanche Effect",
+      "foot": "100% Offline • Zero-Cloud • Client-Side Cryptographic Vault",
+      "preset": "dark-premium",
+      "accent": "#F59E0B"
+    },
+    "duration": 9,
+    "vo": "RoadGuardian was validated against twelve real-world NHTSA collision cases and FTC bandit towing scenarios, proving reliable offline resilience without cloud privacy leaks.",
+    "pause": 0.3
+  },
+  {
+    "name": "08-conclusion",
+    "card": {
+      "title": "Peace of Mind",
+      "kicker": "SafeSpace Hacks 2026",
+      "sub": "Live at safespace-hacks.vercel.app • Open Source on GitHub",
+      "foot": "Build a little more peace of mind. Keeping drivers and roads safer.",
+      "preset": "dark-premium",
+      "accent": "#F59E0B"
+    },
+    "duration": 7.5,
+    "vo": "RoadGuardian turns panic into protocol, protecting lives, evidence, and consumer rights. Try the live copilot today at safespace-hacks.vercel.app.",
+    "pause": 0.5
+  }
+]

@@ -1,0 +1,158 @@
+[
+  {
+    "idx": 0,
+    "name": "01-cover",
+    "file": "/home/yap/Hack/safespace-hacks/evidence/stage-4-demo/raw/scene-00.webm",
+    "wallMs": 10757,
+    "focus": []
+  },
+  {
+    "idx": 1,
+    "name": "02-problem",
+    "file": "/home/yap/Hack/safespace-hacks/evidence/stage-4-demo/raw/scene-01.webm",
+    "wallMs": 10509,
+    "focus": []
+  },
+  {
+    "idx": 2,
+    "name": "03-triage-safety",
+    "session": "app",
+    "focus": [
+      {
+        "t": 0.77,
+        "x": 697,
+        "y": 764
+      },
+      {
+        "t": 1.18,
+        "x": 744,
+        "y": 862
+      },
+      {
+        "t": 1.62,
+        "x": 733,
+        "y": 940
+      }
+    ],
+    "file": "/home/yap/Hack/safespace-hacks/evidence/stage-4-demo/raw/session-app.webm",
+    "range": [
+      0,
+      3.1
+    ]
+  },
+  {
+    "idx": 3,
+    "name": "04-evidence-vault",
+    "session": "app",
+    "focus": [
+      {
+        "t": 0.45,
+        "x": 960,
+        "y": 1214
+      },
+      {
+        "t": 0.86,
+        "x": 756,
+        "y": 587
+      },
+      {
+        "t": 1.25,
+        "x": 688,
+        "y": 727
+      },
+      {
+        "t": 1.65,
+        "x": 1165,
+        "y": 727
+      },
+      {
+        "t": 2.1,
+        "x": 673,
+        "y": 251
+      }
+    ],
+    "file": "/home/yap/Hack/safespace-hacks/evidence/stage-4-demo/raw/session-app.webm",
+    "range": [
+      3.1,
+      7.33
+    ]
+  },
+  {
+    "idx": 4,
+    "name": "05-tow-shield",
+    "session": "app",
+    "focus": [
+      {
+        "t": 0.44,
+        "x": 1063,
+        "y": 1167
+      },
+      {
+        "t": 0.87,
+        "x": 857,
+        "y": 270
+      },
+      {
+        "t": 1.27,
+        "x": 1165,
+        "y": 270
+      },
+      {
+        "t": 1.7,
+        "x": 719,
+        "y": 563
+      },
+      {
+        "t": 2.1,
+        "x": 687,
+        "y": 696
+      }
+    ],
+    "file": "/home/yap/Hack/safespace-hacks/evidence/stage-4-demo/raw/session-app.webm",
+    "range": [
+      7.33,
+      11.56
+    ]
+  },
+  {
+    "idx": 5,
+    "name": "06-dossier-export",
+    "session": "app",
+    "focus": [
+      {
+        "t": 0.45,
+        "x": 1075,
+        "y": 979
+      },
+      {
+        "t": 0.87,
+        "x": 741,
+        "y": 270
+      },
+      {
+        "t": 1.34,
+        "x": 1048,
+        "y": 62
+      }
+    ],
+    "file": "/home/yap/Hack/safespace-hacks/evidence/stage-4-demo/raw/session-app.webm",
+    "range": [
+      11.56,
+      15.56
+    ]
+  },
+  {
+    "idx": 6,
+    "name": "07-validation",
+    "file": "/home/yap/Hack/safespace-hacks/evidence/stage-4-demo/raw/scene-06.webm",
+    "wallMs": 10665,
+    "focus": []
+  },
+  {
+    "idx": 7,
+    "name": "08-conclusion",
+    "file": "/home/yap/Hack/safespace-hacks/evidence/stage-4-demo/raw/scene-07.webm",
+    "wallMs": 8986,
+    "focus": []
+  }
+]
