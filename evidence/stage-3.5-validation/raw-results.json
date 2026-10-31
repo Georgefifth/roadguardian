@@ -1,0 +1,204 @@
+{
+  "benchmarkName": "RoadGuardian Real-World Safety & Incident Benchmark",
+  "version": "1.0.0",
+  "startedAt": "2026-10-31T08:47:34.511Z",
+  "finishedAt": "2026-10-31T08:47:34.517Z",
+  "summary": {
+    "total": 12,
+    "passed": 12,
+    "failed": 0,
+    "passRate": "100%",
+    "verdict": "PASS"
+  },
+  "results": [
+    {
+      "id": "CASE-01",
+      "tier": "Basic",
+      "category": "Rear-End Highway Collision (Dry Daylight)",
+      "status": "PASS",
+      "durationMs": 2,
+      "detail": "Successfully processed incident profile, VIN checked (4T1B11HK5NU109284), hash generated (f1ceca22c3e7b0c9...)",
+      "observations": {
+        "vinCheck": {
+          "clean": "4T1B11HK5NU109284",
+          "isValidLength": true,
+          "hasForbiddenChars": false,
+          "forbiddenChars": []
+        },
+        "integrityHash": "f1ceca22c3e7b0c9c9f415a6d325dfa1b2b9df4b551a5358f3785dbb7da1e7ac"
+      }
+    },
+    {
+      "id": "CASE-02",
+      "tier": "Basic",
+      "category": "Nighttime Interstate Breakdown / Left Shoulder",
+      "status": "PASS",
+      "durationMs": 0,
+      "detail": "Successfully processed incident profile, VIN checked (N/A), hash generated (75cf77f5f46e8dee...)",
+      "observations": {
+        "vinCheck": {
+          "clean": "",
+          "isValidLength": false,
+          "hasForbiddenChars": false,
+          "forbiddenChars": []
+        },
+        "integrityHash": "75cf77f5f46e8dee423f21922d4b97ec5bc089c20d865b39152678a51fd8474d"
+      }
+    },
+    {
+      "id": "CASE-03",
+      "tier": "Basic",
+      "category": "Parking Lot Low-Speed Minor Fender Bender",
+      "status": "PASS",
+      "durationMs": 0,
+      "detail": "Successfully processed incident profile, VIN checked (1HGCR2F83HA019284), hash generated (d16ce15ea254da41...)",
+      "observations": {
+        "vinCheck": {
+          "clean": "1HGCR2F83HA019284",
+          "isValidLength": true,
+          "hasForbiddenChars": false,
+          "forbiddenChars": []
+        },
+        "integrityHash": "d16ce15ea254da4198954cd811900ac6b8a54886cc15592ed469f184a32fd841"
+      }
+    },
+    {
+      "id": "CASE-04",
+      "tier": "Intermediate",
+      "category": "Wet Weather / Hydroplaning Guardrail Impact",
+      "status": "PASS",
+      "durationMs": 0,
+      "detail": "Successfully processed incident profile, VIN checked (WP0AF2A99KS165242), hash generated (f4bc420186710b06...)",
+      "observations": {
+        "vinCheck": {
+          "clean": "WP0AF2A99KS165242",
+          "isValidLength": true,
+          "hasForbiddenChars": false,
+          "forbiddenChars": []
+        },
+        "integrityHash": "f4bc420186710b066d139987cd63c2c817a5befb8c42d59df7ed9fd5ab5a7a5c"
+      }
+    },
+    {
+      "id": "CASE-05",
+      "tier": "Intermediate",
+      "category": "Out-of-State Driver Exchange (Texas in California)",
+      "status": "PASS",
+      "durationMs": 0,
+      "detail": "Successfully processed incident profile, VIN checked (1FTFW1ED8MFC12345), hash generated (e8a06779097f3ea7...)",
+      "observations": {
+        "vinCheck": {
+          "clean": "1FTFW1ED8MFC12345",
+          "isValidLength": true,
+          "hasForbiddenChars": false,
+          "forbiddenChars": []
+        },
+        "integrityHash": "e8a06779097f3ea7c6191b639860bb492cb74446bcd878114f381a3a7823110f"
+      }
+    },
+    {
+      "id": "CASE-06",
+      "tier": "Intermediate",
+      "category": "Commercial Rideshare Encounter (Lyft/Uber Vehicle)",
+      "status": "PASS",
+      "durationMs": 0,
+      "detail": "Successfully processed incident profile, VIN checked (5YJ3E1EB8NF123456), hash generated (a8443a769e224c67...)",
+      "observations": {
+        "vinCheck": {
+          "clean": "5YJ3E1EB8NF123456",
+          "isValidLength": true,
+          "hasForbiddenChars": false,
+          "forbiddenChars": []
+        },
+        "integrityHash": "a8443a769e224c67ca57aaed92782a0e7b966c478aba99a319528f80d1fbc50f"
+      }
+    },
+    {
+      "id": "CASE-07",
+      "tier": "Adversarial",
+      "category": "Bandit Tow Truck Ambush (Unsolicited Highway Arrival)",
+      "status": "PASS",
+      "durationMs": 0,
+      "detail": "Bandit unsolicited arrival flagged; Blank form refusal verified and sealed in dossier.",
+      "observations": {
+        "banditFlag": true,
+        "shieldProtected": true,
+        "integrityHash": "f8069f16ac65d7292299e7c20f316989d9f44871ffd46a267a127e51368e5f79"
+      }
+    },
+    {
+      "id": "CASE-08",
+      "tier": "Adversarial",
+      "category": "Bandit Tow Driver Demanding Blank Digital Screen Signature",
+      "status": "PASS",
+      "durationMs": 0,
+      "detail": "Bandit unsolicited arrival flagged; Blank form refusal verified and sealed in dossier.",
+      "observations": {
+        "banditFlag": true,
+        "shieldProtected": true,
+        "integrityHash": "0c2b22d3a2f2520715e3af2d28cc288dfc61c85a4510cf825f62c065da11bfb4"
+      }
+    },
+    {
+      "id": "CASE-09",
+      "tier": "Adversarial",
+      "category": "Post-Crash Tampering Attempt (Avalanche Effect Check)",
+      "status": "PASS",
+      "durationMs": 0,
+      "detail": "Avalanche effect verified: Altering statement changed 63/64 hex characters (98%) in SHA-256 seal.",
+      "observations": {
+        "hashOriginal": "cc2ecff5ca00eb3b50dd9cf12fa7c92d116b2e6bee181740db00880761d7f468",
+        "hashTampered": "b04529b6b417054dfb03b5140b8e80b936f8398ed64ea4491da8ee6e950cba83",
+        "hashesDiffer": true,
+        "avalancheDiffPercent": 98
+      }
+    },
+    {
+      "id": "CASE-10",
+      "tier": "Edge",
+      "category": "Malformed VIN Input (Short 12 characters)",
+      "status": "PASS",
+      "durationMs": 0,
+      "detail": "Detected short VIN (12 chars). Valid flag correctly false.",
+      "observations": {
+        "vinCheck": {
+          "clean": "1HGCR2F83HA0",
+          "isValidLength": false,
+          "hasForbiddenChars": false,
+          "forbiddenChars": []
+        }
+      }
+    },
+    {
+      "id": "CASE-11",
+      "tier": "Edge",
+      "category": "Invalid ISO 3779 Characters in VIN (Contains 'I', 'O', 'Q')",
+      "status": "PASS",
+      "durationMs": 0,
+      "detail": "Correctly flagged forbidden ISO 3779 characters: I, Q",
+      "observations": {
+        "vinCheck": {
+          "clean": "1HGCR2F83IA01928Q",
+          "isValidLength": true,
+          "hasForbiddenChars": true,
+          "forbiddenChars": [
+            "I",
+            "Q"
+          ]
+        }
+      }
+    },
+    {
+      "id": "CASE-12",
+      "tier": "Negative",
+      "category": "Offline Without GPS Permission (Complete Hardware Denial)",
+      "status": "PASS",
+      "durationMs": 0,
+      "detail": "Graceful fallback to manual landmark / highway exit input without crashing.",
+      "observations": {
+        "fallbackAddress": "Location permission denied (Enter nearest highway exit or street)",
+        "hash": "b82c3ea635d9401d5a0e9f99e5ece38100dc4a94202cab61739b60fb519c42f1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "name": "RoadGuardian Real-World Safety & Incident Benchmark",
+  "version": "1.0.0",
+  "sourceReferences": [
+    {
+      "source": "NHTSA Crash Investigation Sampling System (CISS)",
+      "url": "https://www.nhtsa.gov/crash-data-systems/crash-investigation-sampling-system",
+      "description": "Standard real-world passenger car collision profiles in the US"
+    },
+    {
+      "source": "NHTSA vPIC Public VIN Catalog & ISO 3779 Standard",
+      "url": "https://vpic.nhtsa.dot.gov/api/",
+      "description": "Authentic vehicle identification numbers and check digit constraints"
+    },
+    {
+      "source": "FTC / State Attorney General Consumer Advisories on Bandit Towing",
+      "url": "https://www.forbes.com/sites/advisor/2020/07/10/dont-hook-up-with-a-bandit-tow-truck/",
+      "description": "Real-world predatory towing fraud scenarios after highway crashes"
+    }
+  ],
+  "cases": [
+    {
+      "id": "CASE-01",
+      "tier": "Basic",
+      "category": "Rear-End Highway Collision (Dry Daylight)",
+      "input": {
+        "type": "crash",
+        "speed": "25 mph",
+        "weather": "clear",
+        "location": "US-101 S near Exit 432",
+        "otherDriver": "David Miller",
+        "plate": "7XYZ102",
+        "plateState": "CA",
+        "vin": "4T1B11HK5NU109284",
+        "vehicle": "2022 Toyota Camry",
+        "towDispatchedBy": "police",
+        "refusedBlankForm": true
+      },
+      "expectedOutcome": {
+        "validVinLength": true,
+        "secondaryCrashWarningTriggered": true,
+        "towShieldStatus": "PROTECTED",
+        "dossierExportable": true
+      }
+    },
+    {
+      "id": "CASE-02",
+      "tier": "Basic",
+      "category": "Nighttime Interstate Breakdown / Left Shoulder",
+      "input": {
+        "type": "breakdown",
+        "speed": "0 mph (disabled)",
+        "weather": "night",
+        "location": "I-80 Mile Marker 14.2",
+        "otherDriver": "",
+        "plate": "",
+        "plateState": "",
+        "vin": "",
+        "vehicle": "",
+        "towDispatchedBy": "user_call",
+        "refusedBlankForm": true
+      },
+      "expectedOutcome": {
+        "isBreakdownMode": true,
+        "secondaryCrashWarningTriggered": true,
+        "dossierExportable": true
+      }
+    },
+    {
+      "id": "CASE-03",
+      "tier": "Basic",
+      "category": "Parking Lot Low-Speed Minor Fender Bender",
+      "input": {
+        "type": "crash",
+        "speed": "5 mph",
+        "weather": "clear",
+        "location": "Costco Parking Lot, Richmond CA",
+        "otherDriver": "Alice Wong",
+        "plate": "6ABC321",
+        "plateState": "CA",
+        "vin": "1HGCR2F83HA019284",
+        "vehicle": "2019 Honda Accord",
+        "towDispatchedBy": "none_self_driven",
+        "refusedBlankForm": true
+      },
+      "expectedOutcome": {
+        "validVinLength": true,
+        "dossierExportable": true
+      }
+    },
+    {
+      "id": "CASE-04",
+      "tier": "Intermediate",
+      "category": "Wet Weather / Hydroplaning Guardrail Impact",
+      "input": {
+        "type": "crash",
+        "speed": "45 mph",
+        "weather": "rain",
+        "location": "CA-17 Southbound Mountain Curve",
+        "otherDriver": "Solo Vehicle",
+        "plate": "8DEF901",
+        "plateState": "CA",
+        "vin": "WP0AF2A99KS165242",
+        "vehicle": "2019 Porsche 911",
+        "towDispatchedBy": "chp",
+        "refusedBlankForm": true
+      },
+      "expectedOutcome": {
+        "weatherCondition": "rain",
+        "validVinLength": true,
+        "dossierExportable": true
+      }
+    },
+    {
+      "id": "CASE-05",
+      "tier": "Intermediate",
+      "category": "Out-of-State Driver Exchange (Texas in California)",
+      "input": {
+        "type": "crash",
+        "speed": "30 mph",
+        "weather": "fog",
+        "location": "Embarcadero & Mission St, SF",
+        "otherDriver": "Robert Sterling",
+        "plate": "TX-M90-412",
+        "plateState": "TX",
+        "vin": "1FTFW1ED8MFC12345",
+        "vehicle": "2021 Ford F-150",
+        "towDispatchedBy": "user_call",
+        "refusedBlankForm": true
+      },
+      "expectedOutcome": {
+        "validVinLength": true,
+        "plateState": "TX",
+        "dossierExportable": true
+      }
+    },
+    {
+      "id": "CASE-06",
+      "tier": "Intermediate",
+      "category": "Commercial Rideshare Encounter (Lyft/Uber Vehicle)",
+      "input": {
+        "type": "crash",
+        "speed": "20 mph",
+        "weather": "clear",
+        "location": "Market St & 4th St",
+        "otherDriver": "Tariq Mansoor",
+        "plate": "9UHY811",
+        "plateState": "CA",
+        "vin": "5YJ3E1EB8NF123456",
+        "vehicle": "2022 Tesla Model 3",
+        "towDispatchedBy": "user_call",
+        "refusedBlankForm": true
+      },
+      "expectedOutcome": {
+        "validVinLength": true,
+        "dossierExportable": true
+      }
+    },
+    {
+      "id": "CASE-07",
+      "tier": "Adversarial",
+      "category": "Bandit Tow Truck Ambush (Unsolicited Highway Arrival)",
+      "input": {
+        "type": "crash",
+        "speed": "40 mph",
+        "weather": "clear",
+        "location": "I-880 Northbound near Hegenberger",
+        "otherDriver": "Unknown Driver",
+        "plate": "5XYZ000",
+        "plateState": "CA",
+        "vin": "4T1B11HK5NU109284",
+        "vehicle": "Sedan",
+        "towDispatchedBy": "unsolicited_bandit",
+        "refusedBlankForm": true
+      },
+      "expectedOutcome": {
+        "banditWarningEnforced": true,
+        "blankFormRefusalVerified": true,
+        "dossierShieldStampPresent": true
+      }
+    },
+    {
+      "id": "CASE-08",
+      "tier": "Adversarial",
+      "category": "Bandit Tow Driver Demanding Blank Digital Screen Signature",
+      "input": {
+        "type": "crash",
+        "speed": "35 mph",
+        "weather": "night",
+        "location": "I-5 Southbound near Stockton",
+        "otherDriver": "Trucker Smith",
+        "plate": "1ABC001",
+        "plateState": "CA",
+        "vin": "1FTFW1ED8MFC12345",
+        "vehicle": "Pickup",
+        "towDispatchedBy": "unsolicited_bandit",
+        "refusedBlankForm": true
+      },
+      "expectedOutcome": {
+        "banditWarningEnforced": true,
+        "blankFormRefusalVerified": true,
+        "dossierShieldStampPresent": true
+      }
+    },
+    {
+      "id": "CASE-09",
+      "tier": "Adversarial",
+      "category": "Post-Crash Tampering Attempt (Avalanche Effect Check)",
+      "input": {
+        "type": "crash",
+        "originalNotes": "Vehicle in front stopped suddenly. Safe distance was kept.",
+        "tamperedNotes": "Vehicle in front stopped suddenly. I might have glanced at my phone."
+      },
+      "expectedOutcome": {
+        "avalancheHashChange": true,
+        "tamperDetected": true
+      }
+    },
+    {
+      "id": "CASE-10",
+      "tier": "Edge",
+      "category": "Malformed VIN Input (Short 12 characters)",
+      "input": {
+        "type": "crash",
+        "vin": "1HGCR2F83HA0"
+      },
+      "expectedOutcome": {
+        "validVinLength": false,
+        "lengthDetected": 12
+      }
+    },
+    {
+      "id": "CASE-11",
+      "tier": "Edge",
+      "category": "Invalid ISO 3779 Characters in VIN (Contains 'I', 'O', 'Q')",
+      "input": {
+        "type": "crash",
+        "vin": "1HGCR2F83IA01928Q"
+      },
+      "expectedOutcome": {
+        "hasForbiddenChars": true,
+        "forbiddenCharsList": ["I", "Q"]
+      }
+    },
+    {
+      "id": "CASE-12",
+      "tier": "Negative",
+      "category": "Offline Without GPS Permission (Complete Hardware Denial)",
+      "input": {
+        "type": "crash",
+        "gpsAvailable": false
+      },
+      "expectedOutcome": {
+        "gracefulFallback": true,
+        "coreFlowUnblocked": true,
+        "manualLocationEditable": true
+      }
+    }
+  ]
+}
