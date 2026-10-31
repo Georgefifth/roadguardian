@@ -1,0 +1,152 @@
+{
+  "base": "http://localhost:5179",
+  "browser": "chromium",
+  "headed": false,
+  "startedAt": "2026-10-31T08:45:12.963Z",
+  "finishedAt": "2026-10-31T08:45:24.732Z",
+  "summary": {
+    "total": 10,
+    "pass": 10,
+    "fail": 0
+  },
+  "results": [
+    {
+      "viewport": "desktop",
+      "id": "smoke-landing",
+      "title": "Landing page renders with zero overflow and active emergency HUD",
+      "status": "pass",
+      "ms": 650,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/local/screens/smoke-landing-landing-desktop.png"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "id": "core-flow-end-to-end",
+      "title": "Complete 4-stage emergency intake flow from panic to SHA-256 dossier",
+      "status": "pass",
+      "ms": 894,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/local/screens/core-flow-end-to-end-phase1-safety-secured-desktop.png",
+        "evidence/stage-3-qa/local/screens/core-flow-end-to-end-phase2-evidence-captured-desktop.png",
+        "evidence/stage-3-qa/local/screens/core-flow-end-to-end-phase3-tow-shield-desktop.png",
+        "evidence/stage-3-qa/local/screens/core-flow-end-to-end-phase4-dossier-exported-desktop.png"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "id": "state-persistence-reload",
+      "title": "Incident data survives full browser reload via local cryptographic storage",
+      "status": "pass",
+      "ms": 3209,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/local/screens/state-persistence-reload-persistence-after-reload-desktop.png"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "id": "tow-shield-anti-extortion",
+      "title": "Anti-bandit tow truck verification warns on unsolicited arrivals",
+      "status": "pass",
+      "ms": 276,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/local/screens/tow-shield-anti-extortion-tow-shield-unsolicited-alert-desktop.png"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "id": "incident-vault-lifecycle",
+      "title": "Incident vault modal allows switching, managing, and creating new sessions",
+      "status": "pass",
+      "ms": 841,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/local/screens/incident-vault-lifecycle-vault-modal-open-desktop.png",
+        "evidence/stage-3-qa/local/screens/incident-vault-lifecycle-vault-new-session-desktop.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "smoke-landing",
+      "title": "Landing page renders with zero overflow and active emergency HUD",
+      "status": "pass",
+      "ms": 354,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/local/screens/smoke-landing-landing-mobile.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "core-flow-end-to-end",
+      "title": "Complete 4-stage emergency intake flow from panic to SHA-256 dossier",
+      "status": "pass",
+      "ms": 982,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/local/screens/core-flow-end-to-end-phase1-safety-secured-mobile.png",
+        "evidence/stage-3-qa/local/screens/core-flow-end-to-end-phase2-evidence-captured-mobile.png",
+        "evidence/stage-3-qa/local/screens/core-flow-end-to-end-phase3-tow-shield-mobile.png",
+        "evidence/stage-3-qa/local/screens/core-flow-end-to-end-phase4-dossier-exported-mobile.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "state-persistence-reload",
+      "title": "Incident data survives full browser reload via local cryptographic storage",
+      "status": "pass",
+      "ms": 3287,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/local/screens/state-persistence-reload-persistence-after-reload-mobile.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "tow-shield-anti-extortion",
+      "title": "Anti-bandit tow truck verification warns on unsolicited arrivals",
+      "status": "pass",
+      "ms": 332,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/local/screens/tow-shield-anti-extortion-tow-shield-unsolicited-alert-mobile.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "incident-vault-lifecycle",
+      "title": "Incident vault modal allows switching, managing, and creating new sessions",
+      "status": "pass",
+      "ms": 792,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/local/screens/incident-vault-lifecycle-vault-modal-open-mobile.png",
+        "evidence/stage-3-qa/local/screens/incident-vault-lifecycle-vault-new-session-mobile.png"
+      ]
+    }
+  ]
+}
